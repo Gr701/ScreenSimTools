@@ -1,0 +1,25 @@
+#pragma once
+
+#include <windows.h>
+#include <algorithm> 
+#include "screenCapture.h"
+
+void createWindow(int x, int y, int width, int height);
+
+void makeWindowTransparent(int r, int g, int b);
+
+void closeWindow();
+
+LRESULT CALLBACK windowProcedure(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
+
+bool processMessages(); //should be called in cycle, returns false if window is closed
+
+void renderImage();
+
+void clearRender(GrColor color);
+
+void fillRect(int x, int y, int width, int height, GrColor color);
+
+void draw1dBuffer(int x, int y, int width, int height, int* buffer);
+
+void draw3dBuffer(int x, int y, int width, int height, int* buffer);
