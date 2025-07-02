@@ -1,0 +1,1 @@
+Created a tool to capture the screen image at high FPS with C++, D3D11 and DXGI. Expanded functionality with BMP reading and writing, rendering to the window and simulation of input from the user, allowing to easily write and debug programs with input sending based on the screen content.  
